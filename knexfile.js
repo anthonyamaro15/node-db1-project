@@ -1,9 +1,21 @@
 module.exports = {
+  //   development: {
+  //     client: "sqlite3",
+  //     connection: {
+  //       filename: "./data/budget.db3",
+  //     },
+  //     useNullAsDefault: true,
+  //     migrations: {
+  //       directory: "./data/migrations",
+  //       tableName: "knex_migrations",
+  //     },
+  //     seeds: {
+  //       directory: "./data/seeds",
+  //     },
+  //   },
   development: {
-    client: "sqlite3",
-    connection: {
-      filename: "./data/budget.db3",
-    },
+    client: "pg",
+    connection: "postgres://localhost/budget",
     useNullAsDefault: true,
     migrations: {
       directory: "./data/migrations",
